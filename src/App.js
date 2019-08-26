@@ -1,26 +1,22 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, {useState,useEffect} from 'react';
 
-function App() {
+// 13423305-560615782599bc88e2edb8fa7 api key
+
+// url https://pixabay.com/api/?key=13423305-560615782599bc88e2edb8fa7
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
+    <div className="app container">
+      <div className="jumbotron">
+        <p className="lead text-center">
+          Buscador de imagenes
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      </div>
+      <div className="row justify-content-center">
+        
+      </div>
     </div>
   );
-}
+};
 
 export default App;
