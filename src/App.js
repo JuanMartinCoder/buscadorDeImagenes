@@ -9,7 +9,7 @@ const App = () => {
 
 
   const [busqueda, setBusqueda] = useState('');
-  const [resultados, setResultados] = useState({});
+  const [imagenes, setImagenes] = useState([]);
 
   useEffect(()=>{
 
@@ -23,18 +23,19 @@ const App = () => {
 
       const respuesta = await fetch(url);
       const resultado = await respuesta.json();
-      setResultados(resultado);
-      console.log();
+      setImagenes(resultado.hits);
+
+      
       
 
 
     }
 
     consultarApi();
-
+    
 
   },[busqueda])
-
+  
   return (
     <div className="app container">
       <div className="jumbotron">
